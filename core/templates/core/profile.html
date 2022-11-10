@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="space-y-7 m-5">
+            
+    <div class="p-28 border border-b-2 text-center">
+        add cover photo
+    </div>
+
+    <div class="flex ">
+        <img src="icons/default-user-profile.svg" alt="">
+        <div>
+            <h1>User Name</h1>
+            <h1>@username</h1>
+            bio
+        </div>
+        
+    </div>
+
+    <div  class="flex space-x-24 ">
+        <h1 class="text-tweeter-purple nav-items">Tweets |</h1>
+        <h1 class=" nav-items">Tweets & Replies</h1>
+        <h1 class=" nav-items">Media</h1>
+        <h1 class=" nav-items">Likes</h1>
+    </div>
+
+    <div class="space-x-2 space-y-6">   
+        <div class="flex">
+        <img src="icons/default-user-profile.svg" alt="">
+        
+            <span>User Name</span>
+            <span>@username</span>
+        </div>
+
+        <div class="border border-b-tweeter-purple space-y-6">
+            <!-- posts container -->
+            <p class="m-6" >HIIIII</p>
+            <div class="flex space-x-40 ">
+                <h1 class="hover:text-yellow-500 ">comment</h1>
+                <h1 class="hover:text-green-500">retweet</h1>
+                <h1 class="hover:text-red-600">like</h1>
+            </div>
+        </div >
+
+    </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,35 @@
+<div id="post-container">
+    <!-- post form -->
+    <div id="user-name">
+        <img src="icons/default-user-profile.svg" alt="">
+        <textarea name="" id="" class="p-6" placeholder="What's on your mind?"></textarea>
+    </div>
+    <button id="post-btn">
+        post
+    </button>
+</div>
+
+{% for post in post %}
+<div class="space-x-2 space-y-6">
+    <div class="flex">
+    <img src="icons/default-user-profile.svg" alt="">
+    
+        <span>{{post.name}}</span>
+        <span>@{{post.username}}</span>
+    </div>
+
+    <div class="border border-b-tweeter-purple space-y-6">
+        <!-- posts container -->
+       <a href="{% url 'post' post.id %}"><p class="m-6" >{{post.post}}</p></a>
+        <div id="post-interaction-btns">
+            <span class="post-nav" id="comment">comment</span>
+            <span class="post-nav" id="retweet">retweet</span>
+            <span class="post-nav" id="like">like</span>
+        </div>
+    </div >
+
+</div>
+
+<hr>
+{% endfor %}
+ 
